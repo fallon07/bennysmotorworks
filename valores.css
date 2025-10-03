@@ -1,0 +1,71 @@
+/* valores.css - Estilos específicos da Página "Nossos Valores" (historia.html) */
+
+/* Seção Principal de Conteúdo */
+#historia-main {
+    padding: 0 5%;
+    max-width: 1000px; /* Limita a largura para melhor leitura do texto */
+    margin: 0 auto;
+}
+
+/* Título e Subtítulos */
+#historia-main h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 2.2em;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/* Parágrafos de Texto */
+.secao-texto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Destaque (Quotes/Citações) */
+.citacao-destaque {
+    background-color: var(--cor-secundaria);
+    border-left: 5px solid var(--cor-destaque);
+    padding: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Estrutura de Tópicos (Se a história for dividida em fases) */
+.timeline {
+    margin-top: 30px;
+}
+
+.timeline-item {
+    padding: 15px 0;
+    border-left: 3px solid var(--cor-primaria);
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item::before {
+    content: '★'; /* Ícone de estrela da Benny's */
+    color: var(--cor-destaque);
+    font-size: 1.2em;
+    position: absolute;
+    left: -12px;
+    top: 15px;
+    background-color: var(--cor-fundo);
+    padding: 0 5px;
+}
+
+.timeline-item h4 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 1em;
+    margin: 0;
+}

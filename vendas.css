@@ -1,0 +1,87 @@
+/* vendas.css - Estilos específicos da Página de Vendas (vendas.html) */
+
+/* 1. CENTRALIZAR O BLOCO PRINCIPAL <main> NO MEIO DA PÁGINA */
+#vendas-main {
+    /* Define uma largura máxima para o conteúdo não se espalhar em telas largas */
+    max-width: 1200px;
+    /* A chave: centraliza o bloco na tela */
+    margin: 0 auto; 
+    /* Adiciona um respiro nas laterais em telas pequenas */
+    padding: 20px; 
+}
+
+/* 2. CENTRALIZAR OS TÍTULOS E SUBTÍTULOS DA PÁGINA */
+.titulo-pagina {
+    /* Centraliza o texto de introdução */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 3. AJUSTAR SEÇÕES DE CATÁLOGO */
+/* Adiciona margem abaixo de cada seção de catálogo */
+.catalogo {
+    margin-bottom: 50px;
+}
+
+.catalogo h3 {
+    /* Centraliza o título de cada categoria (Carros Originais/Modificados) */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+
+/* Cartões de Carro (COMPONENTE PRINCIPAL DESTA PÁGINA) */
+.lista-carros {
+    display: flex;
+    /* Já estava correto: centraliza os cards (itens flex) */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 5%;
+}
+
+.car-card {
+    background-color: var(--cor-secundaria);
+    width: 350px;
+    padding: 15px;
+    border: 3px solid var(--cor-destaque);
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+    /* Garante que o texto dentro do card esteja centralizado */
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+}
+
+.car-card h4, .car-card h5 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.car-card .preco {
+    color: var(--cor-destaque);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.car-card button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-secundaria);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: var(--fonte-titulo);
+    transition: background-color 0.3s;
+}
+
+.car-card button:hover {
+    background-color: #fff;
+}

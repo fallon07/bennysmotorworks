@@ -1,0 +1,109 @@
+/* historia.css - Estilos específicos da Página Nossos Valores (historia.html) */
+
+/* Seção Principal de História */
+#historia-main {
+    padding: 40px 10%;
+    text-align: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Título Secundário - Estilo de Carimbo */
+#historia-main h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    border-bottom: 3px dashed var(--cor-destaque);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Bloco de Conteúdo (Garantindo boa legibilidade) */
+.bloco-historia {
+    background-color: var(--cor-secundaria);
+    padding: 30px;
+    margin: 40px 0;
+    border: 2px solid var(--cor-destaque);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4); /* Brilho Laranja */
+    text-align: left;
+}
+
+.bloco-historia p {
+    font-family: var(--fonte-corpo);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Citação/Missão do Benny's */
+.citacao {
+    font-style: italic;
+    color: var(--cor-destaque);
+    font-size: 1.3em;
+    margin-top: 30px;
+    border-left: 5px solid var(--cor-primaria);
+    padding-left: 15px;
+}
+
+/* Fotos/Ícones (Estilos para as imagens reais) */
+
+/* Estilo para a imagem principal (Fundação - Garagem interna) */
+.foto-fundacao {
+    width: 100%;
+    max-width: 450px;
+    height: auto; 
+    margin: 30px auto;
+    border: 5px solid var(--cor-primaria);
+    display: block; 
+}
+
+/* AJUSTE: Imagem de Destaque para ter 960px x 536px e ser CENTRALIZADA */
+.foto-destaque-final {
+    width: 960px; /* Largura definida pelo usuário */
+    height: 536px; /* Altura definida pelo usuário */
+    max-width: 100%; /* Garante que não ultrapasse a largura da tela em dispositivos menores */
+    
+    /* Centraliza a imagem no fluxo normal do documento */
+    position: static; 
+    left: auto;
+    transform: none;
+    margin: 20px auto 40px auto; /* Centralizado com 'auto' e margem vertical */
+
+    border: 4px solid var(--cor-destaque);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.7); 
+    display: block;
+}
+
+/* --- ESTILOS PARA A GALERIA DE IMAGENS --- */
+
+/* Ajustado para centralizar a imagem única, se necessário */
+.galeria-valores {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* AJUSTE: Imagem da Galeria para ter 960px x 536px */
+.foto-galeria {
+    width: 960px; /* Largura definida pelo usuário */
+    height: 536px; /* Altura definida pelo usuário */
+    max-width: 100%; /* Garante que não ultrapasse a largura da tela em dispositivos menores */
+
+    border: 3px solid var(--cor-destaque);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.foto-galeria:hover {
+    transform: scale(1.02);
+}
+
+/* Destaque para Palavras-Chave */
+.bloco-historia strong {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}

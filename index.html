@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benny's Original Motor Works - Seu Templo Lowrider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">BENNY'S ORIGINAL MOTOR WORKS</a></h1>
+        </div>
+        <nav class="nav-principal">
+            <a href="vendas.html">VENDA DE CARROS</a>
+            <a href="historia.html">NOSSOS VALORES</a>
+            <a href="servicos.html">SERVIÇOS & PEÇAS</a>
+            <a href="localizacao.html">LOCALIZAÇÃO</a>
+        </nav>
+        <div class="user-auth">
+            <button id="btn-cadastro">NOVO JOGADOR?</button>
+            <button id="btn-login">ENTRAR</button>
+        </div>
+    </header>
+
+    <section id="auth-modal" class="modal-oculto">
+        <div class="modal-content">
+            <h2>ACESSO AO CLUBE</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Nome de Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">LOGIN</button>
+            </form>
+            <a href="#">Esqueceu a senha?</a>
+            <button class="close-modal">&times;</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="hero">
+            <h2>"Se não pula, não é Benny's. Transformamos lixo em lenda."</h2>
+            <div class="carrossel">
+                </div>
+        </section>
+
+        <section id="venda-carros">
+            <h3>NOSSAS MÁQUINAS EM DESTAQUE</h3>
+
+            <div class="galeria-tipo">
+                <h4><a href="vendas.html">🚗 Venda de Carros Originais (Bases)</a></h4>
+                <div class="galeria-carros original-cars">
+                    <div class="car-card">
+                        <img src="img-chino.jpg" alt="Vapid Chino Original">
+                        <h5>Vapid Chino (ORIGINAL)</h5>
+                        <p>Pronto para a conversão de chassi na Benny's.</p>
+                        <button onclick="window.location.href='vendas.html'">VER DETALHES</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeria-tipo">
+                <h4><a href="vendas.html">💎 Venda de Carros Modificados (Realezas)</a></h4>
+                <div class="galeria-carros modified-cars">
+                    <div class="car-card">
+                        <img src="img-bucanner-custom.jpg" alt="Buccaneer Custom">
+                        <h5>Albany Buccaneer (CUSTOM)</h5>
+                        <p>Hidráulica e pintura metálica prontas para o show.</p>
+                        <button onclick="window.location.href='vendas.html'">COMPRAR!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <footer>
+        <p>&copy; 2024 Benny's Original Motor Works. Todos os direitos de Lowrider reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

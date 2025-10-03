@@ -1,0 +1,76 @@
+/* servicos.css - Estilos específicos da Página de Serviços (servicos.html) */
+
+/* Estilo para a imagem de destaque no topo da página */
+.foto-destaque-servicos {
+    width: 100%;
+    max-height: 400px; /* Limita a altura para não ocupar a tela toda */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    margin-bottom: 30px;
+    border-bottom: 5px solid var(--cor-destaque);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.lista-servicos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.servico-card {
+    background-color: var(--cor-secundaria);
+    width: 250px;
+    padding: 20px;
+    border: 3px solid var(--cor-primaria);
+    box-shadow: 0 0 8px var(--cor-destaque);
+    min-height: 200px;
+}
+
+.servico-card h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+#pecas-em-destaque {
+    text-align: center;
+    padding: 50px 5%;
+}
+
+#pecas-em-destaque h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pecas-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* NOVO ESTILO: Para as novas imagens da galeria (Lowrider e Garagem) */
+.pecas-galeria .foto-galeria-pecas {
+    width: 350px; /* Aumenta a largura para destacar os carros */
+    height: 200px; /* Aumenta a altura */
+    object-fit: cover;
+    border: 5px solid var(--cor-destaque);
+    transition: transform 0.3s ease;
+}
+
+.pecas-galeria .foto-galeria-pecas:hover {
+    transform: scale(1.05);
+    border-color: var(--cor-primaria);
+}
+
+/* Estilo para o botão */
+#pecas-em-destaque button {
+    /* (Se houver estilos globais para botões, serão aplicados. Mantendo a estrutura atual) */
+}

@@ -1,0 +1,49 @@
+/* index.css - Estilos específicos da Página Inicial (index.html) */
+
+/* SEÇÃO PRINCIPAL (HERO) */
+#hero {
+    text-align: center;
+    padding: 80px 5%;
+    /* Substitua 'fundo-lowrider.jpg' por uma imagem real */
+    background: url('fundo-lowrider.jpg') no-repeat center center/cover; 
+    color: var(--cor-destaque);
+    text-shadow: 2px 2px 4px var(--cor-secundaria);
+}
+
+#hero h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+/* GALERIA DE CARROS (DESTAQUE NA INDEX) */
+#venda-carros {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+#venda-carros h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-size: 2em;
+    margin-bottom: 40px;
+    border-bottom: 3px solid var(--cor-destaque);
+    display: inline-block;
+}
+
+.galeria-tipo {
+    margin-bottom: 40px;
+}
+
+.galeria-tipo h4 a {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+}
+
+.galeria-carros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Estilo do car-card deve ser importado ou copiado do vendas.css para funcionar na index */
